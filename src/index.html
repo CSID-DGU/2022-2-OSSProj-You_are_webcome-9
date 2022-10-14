@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>초안</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-home"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true"
+        >
+          교내 편의시설
+        </button>
+        <button
+          class="nav-link"
+          id="nav-profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-profile"
+          type="button"
+          role="tab"
+          aria-controls="nav-profile"
+          aria-selected="false"
+        >
+          교내 건물
+        </button>
+        <button
+          class="nav-link"
+          id="nav-contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-contact"
+          type="button"
+          role="tab"
+          aria-controls="nav-contact"
+          aria-selected="false"
+        >
+          시간표 연동
+        </button>
+        <button
+          class="nav-link"
+          id="nav-disabled-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-disabled"
+          type="button"
+          role="tab"
+          aria-controls="nav-disabled"
+          aria-selected="false"
+          disabled
+        >
+          로그아웃
+        </button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-home"
+        role="tabpanel"
+        aria-labelledby="nav-home-tab"
+        tabindex="0"
+      ></div>
+      <div
+        class="tab-pane fade"
+        id="nav-profile"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+        tabindex="0"
+      ></div>
+      <div
+        class="tab-pane fade"
+        id="nav-contact"
+        role="tabpanel"
+        aria-labelledby="nav-contact-tab"
+        tabindex="0"
+      ></div>
+      <div
+        class="tab-pane fade"
+        id="nav-disabled"
+        role="tabpanel"
+        aria-labelledby="nav-disabled-tab"
+        tabindex="0"
+      ></div>
+    </div>
+    <h5>
+      정보문화관q에서 가장 가까운 복사기의 위치는 정보문화관p 3층 입니다.
+      <br />약 3분 걸립니다.
+    </h5>
+    <img
+      src="https://www.dongguk.edu/resources/images/site/contents/old/campus_map_01.jpg"
+      alt=""
+      class="imm"
+    />
+    <img
+      src="https://t1.daumcdn.net/cfile/tistory/2506A7335900028619"
+      alt=""
+      id="minimap"
+    />
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+          "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.esm.min.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as bootstrap from "bootstrap";
+
+      new bootstrap.Popover(document.getElementById("popoverButton"));
+    </script>
+  </body>
+</html>
